@@ -1,0 +1,808 @@
+/*Import Font below here*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+/* CSS Reset */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section,main{display:block;}body{line-height:1;}ol,ul{list-style:none;}blockquote,q{quotes:none;}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}table{border-collapse:collapse;border-spacing:0;}
+
+/*DESKTOP STYLES*/
+
+/*BASE ROOT*/
+
+html {
+    font-size:100%;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    color: #000000;
+}
+
+/*TYPOGRAPHY*/
+
+.title, h1, h2, h3, h4, h5, h6{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+    .title{
+        font-size: 5.063em;
+        font-weight: 700;
+    }
+
+    h1{
+        font-family: 'Mark Pro Black', sans-serif;
+        font-size: 3.125em;
+        line-height: 1.25em;
+        font-style: normal;
+    }
+
+    h2{
+        font-family: 'Intrepid Extrabold', sans-serif;
+        font-size: 2em;
+        font-weight: 600;
+        font-style: bold;
+        line-height: 1em;
+        text-transform: capitalize;
+        padding: auto;
+        display: inline;
+    }
+
+    h3{
+        font-family: 'Myanmar Text Bold', sans-serif;
+        font-size: 2.1875em;
+        font-weight: 300;
+        font-style: bold;
+        text-transform: capitalize;
+    }
+
+    h4{
+        font-family: 'Myanmar Text Regular', sans-serif;
+        font-size: 1.5em;
+        font-weight: 300;
+        font-style: normal;
+        text-transform: capitalize;
+    }
+
+    h5{
+        font-family: 'Malgun Gothic Regular', sans-serif;
+        font-size: 1.25em;
+        font-weight: 300;
+        font-style: normal;
+        text-transform: capitalize;
+    }
+
+    h6{
+        font-family: 'Malgun Gothic Regular', sans-serif;
+        font-size: 1.125em;
+        font-weight: 300;
+        font-style: normal;
+        text-transform: capitalize;
+    }
+
+    p{
+        font-family: 'Gill Sans MT Regular', sans-serif;
+        font-size: 1.25em;
+        font-weight: 300;
+        font-style: normal;
+        text-transform: none;
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+
+/*Margin top is 40 pixels and left and right is auto*/
+    .container{
+        width: 100%;
+        margin: 40px auto;
+
+    }
+
+    /*HEADER*/
+
+    #header-wrapper{
+        display: block;
+        width: 100%;
+        height: 150px;
+        background-color: #ffffff;
+        position: fixed;
+        top: 0;
+        z-index: 3;
+      
+    /* border:solid 1px red;*/
+    }
+
+    header{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    /*LOGO*/
+
+    #logo span, nav{
+        text-transform: uppercase;
+    }
+
+    /*      LOGO IMAGE*/
+    #logo{
+        background: url(../images/Wayfair_logo.png)no-repeat;
+        width: 250px;
+        height: 125px;
+        background-size: contain;
+        margin: 20px auto;
+    }
+
+        #logo h1 span{
+            position: absolute;
+            text-indent: -99999px;
+        }
+
+
+/*NAVIGATION*/
+
+    nav{
+        width: 100%;
+        height: 40px;
+        text-align: center;
+        position: relative;
+        bottom:3.8em;
+    }
+
+    nav ul li{
+        display: inline;
+        margin: 0 25px;
+        font-size: 1em;
+    }
+
+    nav ul li a{
+        text-decoration: none;
+        font-weight: 300;
+        color: #313131;
+    }
+
+    nav ul li a:hover{
+        color: #007219;
+        border-bottom: solid 2px #313131;
+        padding-bottom: 1px;
+    }
+
+/*HERO*/
+
+    #hero-wrapper{
+        width: 100%;
+        height: 200%;
+        background-color: #ca6dff;
+    }
+
+    #hero{
+        width: 80%;
+        height: 100vh;  /*   vh = Vertical Height on page load*/
+        text-align: center;
+        margin: auto;
+        overflow: hidden;
+        padding: 200px 0 100px 0;
+    }
+
+    #hero h1{
+        color: #ffffff;
+        line-height: 1em;
+        letter-spacing: 2px;
+    }
+
+    #hero h1 span{
+        font-size: .3em;
+    }
+
+    #hero p{
+        max-width: 60%;
+        font-size: 1.25em;
+        margin:0 auto;
+        text-align: center;
+    }
+
+/*CHEVRON ICON*/
+
+.fa-chevron-down{
+    margin-top: 60px;
+}
+
+/*ANIMATION*/
+
+.text-focus-in {
+	-webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	        animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2024-4-12 9:54:4
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation text-focus-in
+ * ----------------------------------------
+ */
+ @-webkit-keyframes text-focus-in {
+    0% {
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes text-focus-in {
+    0% {
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+
+  /*LOGO INFO*/
+
+  #our-logo{
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 160px 0 100px 0;
+    text-align: center;
+    }
+
+   #our-logo h3{
+    font-family: Myanmar Text, sans-serif;;
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 50px 0 100px 0;
+    text-align: left;
+    }
+
+    .desktop img{
+        height: 80%;
+        width: 80%;
+        padding-top: 10px;
+    }
+
+    table h3 {
+        font-family: Myanmar Text, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+      
+      td, th {
+        font-family: Myanmar Text, sans-serif;
+        font-size: 20px;
+        border: 1px solid #000000;
+        text-align: left;
+        padding: 15px;
+      }
+      
+      tr:nth-child(even) {
+        background-color: #daffbc;
+      }
+ 
+  
+  /*GRIDS*/
+
+  /*CSS GRID TECHNIQUE*/
+
+    #grid-wrapper{
+        width: 100%;
+        background-color: #ca6dff;
+    }
+
+    #grids{
+        width: 80%;
+        margin: 0 auto;
+        overflow: hidden;
+        padding: 200px 0 100px 0;
+        text-align: center;
+    }
+
+    .grid-container{
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 20px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .grid-container > div{
+        padding: 20px 0;
+        margin-bottom: 20px;
+        background-color: #ca6dff;
+    }
+
+    .item-1, .item-2, .item-3, .item-4, .item-5, .item-6,
+    .item-7, .item-8, .item-9, .item-10, .item-11, .item-12{
+        font-variant-numeric: diagonal-fractions;
+    }
+
+    /*1/1 width*/
+
+    .item-1{
+        grid-column-start: 1;
+        grid-column-end: 13;
+    }
+
+    /*1/2 width*/
+    .item-2{
+        grid-column-start: 1;
+        grid-column-end: 7;
+    }
+
+    .item-3{
+        grid-column-start: 7;
+        grid-column-end: 13;
+    }
+
+    /*1/3 width*/
+    .item-4{
+        grid-column-start: 1;
+        grid-column-end: 5;
+    }
+
+    .item-5{
+        grid-column-start: 5;
+        grid-column-end: 9;
+    }
+
+    .item-6{
+        grid-column-start: 9;
+        grid-column-end: 13;
+    }
+
+    /*1/4 width*/
+    .item-7{
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+
+    .item-8{
+        grid-column-start: 4;
+        grid-column-end: 7;
+    }
+
+    .item-9{
+        grid-column-start: 7;
+        grid-column-end: 10;
+    }
+
+    .item-10{
+        grid-column-start: 10;
+        grid-column-end: 13;
+    }
+
+    /*3/4 width*/
+    .item-11{
+        grid-column-start: 1;
+        grid-column-end: 10;
+    }
+
+    .item-12{
+        grid-column-start: 10;
+        grid-column-end: 13;
+    }
+
+
+    /*COLOURS*/
+
+    #colours{
+        width: 80%;
+        margin: 0 auto;
+        overflow: hidden;
+        padding: 160px 0 100px 0;
+        text-align: center;
+    }
+    
+    .colour-container{
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 20px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .colour-container > div{
+        padding: 20px 0;
+        margin-bottom: 70px;
+        background-color: #ffffff;
+    }
+
+    .colour-container > p{
+        padding: 20px 60px 0 10px;
+        margin-bottom: 20px;
+        padding-left: 30px;
+        background-color: #ffffff;
+        text-align: center;
+    }
+
+    .colour-title{
+        height: 160px;
+        text-align: center;
+    }
+
+    .colour-title p{
+        text-align: center;
+    }
+
+    .hex{
+        display: block;
+        height: 50px;
+        margin-top: 180px;
+        background-color: #ffffff;
+        text-align: center;
+        line-height: 50px; /*To vertically center text this equals element height*/
+    }
+
+    #fandango{
+        grid-column-start: 1;
+        grid-column-end: 6;
+        background-color: #b13f9e;
+        padding-top: 20px;
+    }
+
+    #fandango div{
+        font-size: 20px;
+    }
+
+    #woody-brown{
+        grid-column-start: 1;
+        grid-column-end: 6;
+        background-color: #42273b;
+        margin-top: 20px;
+    }
+
+    #woody-brown div{
+        font-size: 20px;
+    }
+
+    #light-sage{
+        grid-column-start: 1;
+        grid-column-end: 6;
+        background-color: #c2eabd;
+        margin-top: 20px;
+    }
+
+    #light-sage div{
+        font-size: 20px;
+    }
+
+    #green{
+        grid-column-start: 1;
+        grid-column-end: 6;
+        background-color: #0d9448;
+        margin-top: 20px;
+    }
+    
+    #green div{
+        font-size: 20px;
+    }
+    
+    #purple{
+        grid-column-start: 1;
+        grid-column-end: 6;
+        background-color: #70566d;
+        margin-top: 20px;
+    }
+
+    #purple div{
+        font-size: 20px;
+    }
+
+
+/*TYPOGRAPHY 2*/
+
+    #typography{
+        width: 100%;
+        margin: 0 auto;
+        overflow: hidden;
+        padding: 160px 0 100px 0;
+        text-align: center;
+    }
+
+    #typography h1{
+        font-family: Mark Pro, sans-serif;
+        width: 100%;
+        margin: 0 auto;
+        overflow: hidden;
+        padding: 50px 0 0 0;
+        text-align: center;
+    }
+
+    #typography h2{
+        font-family: Mark Pro, sans-serif;
+        width: 100%;
+        margin: 0 auto;
+        overflow: hidden;
+        padding: 50px 0 0 0;
+        text-align: center;
+    }
+
+    #typography h3{
+        font-family: Myanmar Text, sans-serif;
+        width: 100%;
+        margin: 0 auto;
+        overflow: hidden;
+        padding: 50px 0 0 0;
+        text-align: center;
+    }
+
+    #typography h4{
+        font-family: Myanmar Text, sans-serif;
+        width: 100%;
+        margin: 0 auto;
+        overflow: hidden;
+        padding: 50px 0 0 0;
+        text-align: center;
+    }
+
+    #typography h5{
+        font-family: Malgun Gothic, sans-serif;
+        width: 100%;
+        margin: 0 auto;
+        overflow: hidden;
+        padding: 50px 0 0 0;
+        text-align: center;
+    }
+
+    #typography h6{
+        font-family: Malgun Gothic, sans-serif;
+        width: 100%;
+        margin: 0 auto;
+        overflow: hidden;
+        padding: 50px 0 0 0;
+        text-align: center;
+    }
+
+/*ICONOGRAPHY*/
+
+    #iconography{
+        width: 100%;
+        margin: 0 auto;
+        overflow: hidden;
+        padding: 160px 0 100px 0;
+        text-align: center;
+    }
+
+    #iconography div{
+        font-size: 20px;
+        width: 100%;
+        margin: 0 auto;
+        overflow: hidden;
+        padding: 10px 0 10px 0;
+        text-align: center;
+    }
+
+
+    .fas{
+        font-size: 30px; 
+    }
+
+    .fa-solid{
+        font-size: 80px;
+        color: #42273b;
+        padding: 50px 10px 20px 0;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .fa-brands{
+        font-size: 90px;
+        color: #42273b;
+        padding: 50px 10px 20px 0;
+        margin: 0 auto;
+    }
+
+/*BUTTON*/
+
+    #button{
+        width: 100%;
+        margin: 0 auto;
+        overflow: hidden;
+        padding: 100px 0 100px 0;
+        text-align: center;
+    }
+
+    #button div{
+        font-size: 20px;
+        width: 100%;
+        margin: 0 auto;
+        overflow: hidden;
+        padding: 10px 0 10px 0;
+        text-align: center;
+    }
+
+    .container{
+        text-align: center;
+        margin-top: 10 0px;
+    }
+
+    .btn{
+        border: 2px solid #000000;
+        padding: 10px 30px;
+        font-size: 20px;
+        font-family: "Poppins";
+        margin: 5px 5px 5px 5px;
+        position: relative;
+        overflow: hidden;
+        transition: 0.3s;
+    }
+
+    .btn1{
+        color: #000000;
+        background: #0D9448;
+    }
+
+    .btn1:hover{
+        color: #ffffff;
+        background: #005512;
+    }
+
+    .btn2{
+        color: #000000;
+        background: #C2EABD;
+    }
+
+    .btn2:hover{
+        color: #ffffff;
+        background: #425a47;
+    }      
+
+    .btn3{
+        color: #000000;
+        background: #B13F9E;
+    }
+
+    .btn3:hover{
+        color: #ffffff;
+        background: #521848;
+    }
+    
+    .btn4{
+        color: #000000;
+        background: #915781;
+    }
+
+    .btn4:hover{
+        color: #ffffff;
+        background: #42273B;
+    }
+
+    .btn5{
+        color: #000000;
+        background: #a77ca2;
+    }
+
+    .btn5:hover{
+        color: #ffffff;
+        background: #521848;
+    }
+
+    .btn6{
+        color: #000000;
+        background: #0D9448;
+    }
+
+    .btn6:hover{
+        color: #ffffff;
+        background: #005512;
+    }
+
+    .btn7{
+        color: #000000;
+        background: #3bff90;
+        padding: 10px 20px 10px 20px;
+    }
+
+    .btn7:hover{
+        color: #ffffff;
+        background: #005512;
+    }
+
+    .btn8{
+        color: #000000;
+        background: #ff7c7c;
+        padding: 10px 20px 10px 20px;
+    }
+
+    .btn8:hover{
+        color: #ffffff;
+        background: #611313;
+    }
+
+    .btn9{
+        color: #000000;
+        background: #ff78dd;
+        padding: 10px 20px 10px 20px;
+    }
+
+    .btn9:hover{
+        color: #ffffff;
+        background: #572a4f;
+    }
+
+    .btn10{
+        color: #000000;
+        background: #56a556;
+        padding: 10px 20px 10px 20px;
+    }
+
+    .btn10:hover{
+        color: #ffffff;
+        background: #0a7a35;
+    }
+
+    .btn11{
+        color: #000000;
+        background: #ffffff;
+        padding: 10px 40px 10px 40px;
+        margin-top: px;
+    }
+
+    .btn11:hover{
+        color: #ffffff;
+        background: #575757;
+    }
+
+    input[type=text], input[type=submit] {
+        width: 100%;
+        font-size: 20px;
+        font-family: "Poppins";
+        padding: 10px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #000000;
+        box-sizing: border-box;
+      }
+      
+      input[type=checkbox] {
+        margin-top: 16px;
+      }
+      
+      input[type=submit] {
+        background-color: #04AA6D;
+        color: rgb(207, 0, 0);
+        border: none;
+      }
+      
+      input[type=submit]:hover {
+        opacity: 0.8;
+      }
+
+
+/*Start responsive below here*/
+
+
+
+@media screen and (max-width: 480px)
+{
+
+    /*Queries go here*/
+    
+    
+    
+}
+    
+   

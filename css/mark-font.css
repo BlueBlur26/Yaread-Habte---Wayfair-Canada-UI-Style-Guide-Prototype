@@ -1,0 +1,19 @@
+@font-face {
+  font-family: 'Markformc';
+  font-style: normal;
+  font-weight: 500;
+  src: url(https://techdatahybridit.com/fonts/MarkForMC-Med.ttf) format('truetype');
+}
+/* latin */
+@font-face {
+  font-family: 'Markformc';
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://techdatahybridit.com/fonts/MarkForMC-Bold.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Markformc';
+  font-style: normal;
+  font-weight: 900;
+  src: url(https://techdatahybridit.com/fonts/MarkForMC-Black.ttf) format('truetype');
+}
